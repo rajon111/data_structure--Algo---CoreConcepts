@@ -25,3 +25,20 @@ function sumOfAll(n){
     return n*(n+1)/2
 }
 console.log(sumOfAll(5));
+
+//Constant And Smaller Terms Don't Matter In Big O
+//BIG O(n)
+function min5log(n){
+    for(let i=0; i<=Math.max(5,n); i++){ // dependent on n
+        console.log(i);
+    }
+}
+min5log(6)
+
+//BIG O(1)
+function max5log(n){
+    for(let i=0; i<= Math.min(5,n);i++){// not depend on n
+        console.log(i);
+    }
+}
+max5log(6)
