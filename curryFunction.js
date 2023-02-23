@@ -17,7 +17,7 @@ function sum(a, b, c){
 }
 
 let curriedSum = curry(sum);
-
+/*we can use lodash alternative of curry function    */
 console.log(curriedSum(1, 2, 3));
 console.log(curriedSum(1), (2, 3));
 console.log(curriedSum(1), (2), (3));
